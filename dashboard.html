@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="60"> <!-- 🔁 Auto-refresh every 60 seconds -->
+    <title>Health Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Google Fit Health Dashboard</h1>
+        <div class="card-grid">
+            <div class="card">
+                <h2>🚶‍♂️ Steps</h2>
+                <p>{{ steps }}</p>
+            </div>
+            <div class="card">
+                <h2>🔥 Calories</h2>
+                <p>{{ calories }} kcal</p>
+            </div>
+            <div class="card">
+                <h2>❤️ Heart Rate</h2>
+                <p>{{ heart_rate }} bpm</p>
+            </div>
+            <div class="card">
+                <h2>😴 Sleep</h2>
+                <p>{{ sleep_minutes }} minutes</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
